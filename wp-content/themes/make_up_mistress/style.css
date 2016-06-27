@@ -1,0 +1,165 @@
+/*
+Theme Name: MakeUpMistress
+Theme URI: http://162.243.121.79/
+Description: It's that time of year again! The time where we start to see glimpses of extra oil blotting sheets and unruly Mufasa hair in our future. 
+Version: 2.0
+Author: Tier5
+Author URI: http://tier5.in;
+*/
+
+.list-group{margin-top:20px; }
+.list-group-item {background: none!important; 
+	border:none; display: inline; font-family: 'Quicksand', sans-serif; font-weight: 700; 
+	text-transform: uppercase; 
+padding: 5px 5px!important;
+
+}
+.black {color: #000; text-decoration: none; font-size:2em;}
+.black-fb {color: #000; text-decoration: none; font-size:2em!important;}
+.black-bg a{color: #000; text-decoration: none; }
+.topleftpanel2{position: relative;}
+.topleftpanel3{margin-top:25px; position: relative;}
+#src_input{ max-width: 100%; height:30px; background: none; border-radius:0;
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+	border-left: 1px solid #000;
+	border-right:none;
+	display: block;
+	
+	
+	 }
+/* .form-control{width:150px!important; } */
+.src-btn{background: none; border-radius: 0;
+border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+	border-right: 1px solid #000;
+	border-left:none;
+	height:30px;
+	
+	display:inline; }
+.src-btn:hover{background: none;
+border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+	border-right: 1px solid #000;
+	border-left:none;
+	height:30px;
+	
+
+}
+#src_input::-webkit-input-placeholder { color:#000; font-size:.75em; }
+#src_input::-moz-placeholder { color:#000; font-size:.75em; }
+#wrapper{position: relative; }
+.navbar-toggle{background-color: #333!important;}
+.navbar-inverse{background: none; border-top:1px solid #2B3956; border-radius: 0; border-bottom:1px solid #2B3956; border-left: none; border-right: none;}
+.navbar-inverse > ul {text-align: center; }
+.navbar-inverse .navbar-nav>li>a {color: #D41A69!important; padding-left:22px; padding-right:22px; font-family: 'Quicksand', sans-serif; font-weight: 700; }
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {border-color: #2B3956!important; }
+.clearfix{margin:0; padding:0; float: none; clear:both;}
+.heading{text-align: center;}
+.heading h1{font-family: 'Quicksand', sans-serif; font-weight: 700; font-size: 1.5em;}
+.heading p{font-family: 'Quicksand', sans-serif; font-weight: 700; font-size: .8em; text-align: justify; padding-top: 10px;}
+.cursive{font-family: 'Great Vibes', cursive; font-size:2em; margin-top: 10px; color: #D41A69;}
+.readmore{font-family: 'Quicksand', sans-serif; font-weight: 700; font-size: .8em; text-transform: uppercase; text-align: center;}
+.readmore a{color: #D41A69;}
+/* .sidepanel {width:250px; float: right;} */
+.sidepanel  h4{  border-top:1px solid #2B3956; padding: 5px 0 5px 0; border-bottom:1px solid #2B3956; color:#D41A69; text-align: center;  font-family: 'Quicksand', sans-serif; font-weight: 700; font-size: 1em; text-transform: uppercase; }
+.sidepanel p{font-family: 'Quicksand', sans-serif; font-weight: 700; font-size: .8em; text-align:justify; padding-top: 10px;}
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+  padding-top: 20px;
+  
+}
+.overlay {
+	margin-left: 10%;
+}
+.hovereffect .overlay {
+  width: 80%;
+  height: 25%;
+  position: absolute;
+  overflow: hidden;
+  left: 0;
+  background-color: rgba(255, 255, 255, 1);
+  /* top: -200px; */
+  bottom:0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: all 0.1s ease-out 0.5s;
+  transition: all 0.1s ease-out 0.5s;
+
+
+
+}
+
+.hovereffect:hover .overlay {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  bottom: 0px;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+.overlay h2{font-size: .8em; text-transform: uppercase; margin-top:10px!important; text-align: center;}
+.overlay h2 a{ color: #D41969; text-decoration: none; font-family: 'Quicksand', sans-serif; font-weight: 700; }
+.overlay em{font-family: 'Quicksand', sans-serif; font-weight: 700; font-size: .7em; position: relative; top: -10px!important;}
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.42;
+  border-radius: 15px;
+  background-color:#2B3956;
+  border: none;
+}
+ul.social_links li{display: inline; list-style-type: none;}
+ul.social_links li a{text-decoration: none; color: #F6A4B2;}
+.btn-circle:hover{background-color:#D41969; color: #fff;}
+#src_input_sidepanel{border-top:1px solid #949594;
+	    
+	 border-radius: 0;  border-bottom:1px solid #949594; border-left:1px solid #949594; border-right:none;}
+
+#src_input_sidepanel::-webkit-input-placeholder { color:#000; font-size: .75em; }
+.src-btn-sidbar {color:#F282A9; border-radius:0; border-top:1px solid #949594; border-bottom: 1px solid #949594; border-left:none;}
+
+.src-btn-sidebar{width:px; background: none; border-radius: 0;
+border-top: 1px solid #949594;
+	border-bottom: 1px solid #949594;
+	border-right: 1px solid #949594;
+	border-left:none;
+	
+	display:inline; }
+.src-btn-sidebar:hover{background: none;
+border-top: 1px solid #949594;
+	border-bottom: 1px solid #949594;
+	border-right: 1px solid #949594;
+	border-left:none;
+	
+
+}
+
+.popular_post h2{font-size: 2em; text-transform: uppercase; font-family: 'Quicksand', sans-serif; font-weight: 700; text-align: center;}
+.newsletter-box{background-color: #000; height: 195px;}
+.newsletter-box h5{color:#fff; font-size: 1em; text-transform: uppercase; font-family: 'Quicksand', sans-serif; font-weight: 700; text-align: center; padding-top: 10px;}
+.newsletter-box p{text-align: left; width: 70%; margin-left:40px; font-size: .7em; color: #fff; padding: 10px;}
+#src_input_newspanel{ height: 32px; background: #fff; margin-left: 5px; border-radius:0; border:none;}
+
+.src-btn-newspanel{ float:left; background:#fff; border-radius: 0; border:none; position: relative; left:-22px; }
+.src-btn-newspanel:hover{background:#fff; border:none;}
+.view-all{background: url('assets/images/view-all--btn.png') center no-repeat; height: 61px; margin-top: 70px;}
+.view-all a {color: #fff; font-family: 'Quicksand', sans-serif; text-transform: uppercase; font-weight: 700; font-size: 1em; position: relative; top: 20px; }
+#footer
+{
+    height: 267px;
+    background-color: #F6A4B2;
+    position: relative;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+.footer-text{text-align: center; font-family: 'Quicksand', sans-serif;  font-weight: 700; color: #D41969; }

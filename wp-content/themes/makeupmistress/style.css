@@ -1,0 +1,320 @@
+/*
+Theme Name: Makeup Mistress
+Description: In 2014, our default theme lets you create a responsive magazine website with a sleek, modern design. Feature your favorite homepage content in either a grid or a slider. Use the three widget areas to customize your website, and change your content's layout with a full-width page template and a contributor page to show off your authors. Creating a magazine website with WordPress has never been easier.
+Version: 1.6
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, green, white, light, dark, two-columns, three-columns, left-sidebar, right-sidebar, fixed-layout, responsive-layout, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready, accessibility-ready
+Text Domain: twentyfourteen
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/**
+ * Table of Contents:
+ *
+ * 1.0 - Reset
+ * 2.0 - Repeatable Patterns
+ * 3.0 - Basic Structure
+ * 4.0 - Header
+ * 5.0 - Navigation
+ * 6.0 - Content
+ *   6.1 - Post Thumbnail
+ *   6.2 - Entry Header
+ *   6.3 - Entry Meta
+ *   6.4 - Entry Content
+ *   6.5 - Galleries
+ *   6.6 - Post Formats
+ *   6.7 - Post/Image/Paging Navigation
+ *   6.8 - Attachments
+ *   6.9 - Archives
+ *   6.10 - Contributor Page
+ *   6.11 - 404 Page
+ *   6.12 - Full-width
+ *   6.13 - Singular
+ *   6.14 - Comments
+ * 7.0 - Sidebar
+ *   7.1 - Widgets
+ *   7.2 - Content Sidebar Widgets
+ * 8.0 - Footer
+ * 9.0 - Featured Content
+ * 10.0 - Multisite
+ * 11.0 - Media Queries
+ * 12.0 - Print
+ * -----------------------------------------------------------------------------
+ */
+
+
+/**
+ * 1.0 Reset
+ *
+ * Resetting and rebuilding styles have been helped along thanks to the fine
+ * work of Eric Meyer, Nicolas Gallagher, Jonathan Neal, and Blueprint.
+ *
+ * -----------------------------------------------------------------------------
+ */
+#navigation .menu-main-menu-container > .nav-menu { width:100%; text-align:center; height:0; }
+#navigation .menu-main-menu-container > .nav-menu > li { float:none; display:inline-block; }
+.list-group{margin-top:5px; }
+.list-group-item {background: none!important; 
+	border:none; display: inline; font-family: 'Quicksand', sans-serif; font-weight: 700; 
+	text-transform: uppercase; 
+padding: 5px 5px;
+
+}
+.black {color: #000; text-decoration: none; font-size:28px; }
+.black-fb {color: #000; text-decoration: none; font-size:2em!important;}
+.black-bg a{color: #000; text-decoration: none; }
+.topleftpanel2{position: relative; text-align:right; }
+.topleftpanel3{margin-top:5px; position: relative;}
+#src_input{ max-width: 100%; height:30px; background: none; border-radius:0;
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+	border-left: 1px solid #000;
+	border-right:none;
+	display: block;
+	
+	
+	 }
+
+/*=============Newsletter============*/
+p.wysija-paragraph { margin-left:0 !important; display:inline-block !important; float:left; }
+p.wysija-paragraph > input[type="text"] {
+    color: #000;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: normal;
+    height: 35px;
+    width: 100%;
+}
+.wysija-submit {
+    color: #000;
+    display: inline-block !important;
+    float: left;
+    font-size: 16px;
+    height: 36px;
+    margin-top: 10px !important;
+    width: 25%;
+}
+/*=============Nesletter=============*/
+
+/* .form-control{width:150px!important; } */
+.src-btn{background: none; border-radius: 0;
+border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+	border-right: 1px solid #000;
+	border-left:none;
+	height:30px;
+	
+	display:inline; }
+.src-btn:hover{background: none;
+border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+	border-right: 1px solid #000;
+	border-left:none;
+	height:30px;
+	
+
+}
+#src_input::-webkit-input-placeholder { color:#000; font-size:.75em; }
+#src_input::-moz-placeholder { color:#000; font-size:.75em; }
+#wrapper{position: relative; }
+.navbar-toggle{background-color: #333!important;}
+.navbar-inverse{background: none; border-top:1px solid #2B3956; border-radius: 0; border-bottom:1px solid #2B3956; border-left: none; border-right: none;}
+.navbar-inverse > ul {text-align: center; }
+.navbar-inverse .navbar-nav>li>a, #navigation .menu-main-menu-container > .nav-menu > li > a {color: #D41A69!important; padding: 15px 22px; font-family: 'Quicksand', sans-serif; font-weight: 700; text-transform:uppercase; float:left; }
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {border-color: #2B3956!important; }
+.clearfix{margin:0; padding:0; float: none; clear:both;}
+.heading{text-align: center;}
+.heading h1{font-family: 'Quicksand', sans-serif; font-weight: 700; font-size: 1.5em;}
+.heading p{font-family: 'Quicksand', sans-serif; font-weight: 700; font-size: .8em; text-align: justify; padding-top: 10px;}
+.heading > p.date { text-align:center; }
+.cursive{font-family: 'Great Vibes', cursive; font-size:4em; margin-top: 10px; color: #D41A69;}
+.readmore{font-family: 'Quicksand', sans-serif; font-weight: 700; font-size: .8em; text-transform: uppercase; text-align: center;}
+.readmore a{color: #D41A69; text-decoration:underline; font-size:16px; }
+/* .sidepanel {width:250px; float: right;} */
+.sidepanel  h4{  border-top:1px solid #2B3956; padding: 5px 0 5px 0; border-bottom:1px solid #2B3956; color:#D41A69; text-align: center;  font-family: 'Quicksand', sans-serif; font-weight: 700; font-size: 1em; text-transform: uppercase; float:left; width:100%; }
+.sidepanel p{font-family: 'Quicksand', sans-serif; font-weight: 700; font-size: .8em; text-align:justify; padding-top: 10px;}
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+  padding-top: 20px;
+  
+}
+/*.overlay {
+	margin-left: 10%;
+}*/
+.hovereffect .overlay {
+  width: 80%;
+  height: 25%;
+  position: absolute;
+  overflow: hidden;
+  left: 0;
+  background-color: rgba(255, 255, 255, 1);
+  /* top: -200px; */
+  bottom:0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: all 0.1s ease-out 0.5s;
+  transition: all 0.1s ease-out 0.5s;
+
+
+
+}
+
+.hovereffect:hover .overlay {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  bottom: 0px;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+.overlay h2{font-size: .8em; text-transform: uppercase; margin-top:10px!important; text-align: center;}
+.overlay h2 a{ color: #D41969; text-decoration: none; font-family: 'Quicksand', sans-serif; font-weight: 700; }
+.overlay em{font-family: 'Quicksand', sans-serif; font-weight: 700; font-size: .7em; position: relative; top: -10px!important;}
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.42;
+  border-radius: 15px;
+  background-color:#2B3956;
+  border: none;
+}
+ul.social_links li{display: inline; list-style-type: none;}
+ul.social_links li a{text-decoration: none; color: #F6A4B2;}
+.btn-circle:hover{background-color:#D41969; color: #fff;}
+#src_input_sidepanel{border-top:1px solid #949594;
+	    
+	 border-radius: 0;  border-bottom:1px solid #949594; border-left:1px solid #949594; border-right:none;}
+
+#src_input_sidepanel::-webkit-input-placeholder { color:#000; font-size: .75em; }
+.src-btn-sidbar {color:#F282A9; border-radius:0; border-top:1px solid #949594; border-bottom: 1px solid #949594; border-left:none;}
+
+.src-btn-sidebar{width:px; background: none; border-radius: 0;
+border-top: 1px solid #949594;
+	border-bottom: 1px solid #949594;
+	border-right: 1px solid #949594;
+	border-left:none;
+	
+	display:inline; }
+.src-btn-sidebar:hover{background: none;
+border-top: 1px solid #949594;
+	border-bottom: 1px solid #949594;
+	border-right: 1px solid #949594;
+	border-left:none;
+	
+
+}
+
+.popular_post h2{font-size: 2em; text-transform: uppercase; font-family: 'Quicksand', sans-serif; font-weight: 700; text-align: center;}
+.newsletter-box{background-color: #000; height: 195px;}
+.newsletter-box h5{color:#fff; font-size: 1em; text-transform: uppercase; font-family: 'Quicksand', sans-serif; font-weight: 700; text-align: center; padding-top: 10px;}
+.newsletter-box p{text-align: left; width: 70%; margin-left:40px; font-size: .7em; color: #fff; padding: 10px;}
+#src_input_newspanel{ height: 32px; background: #fff; margin-left: 5px; border-radius:0; border:none;}
+
+.src-btn-newspanel{ float:left; background:#fff; border-radius: 0; border:none; position: relative; left:-22px; }
+.src-btn-newspanel:hover{background:#fff; border:none;}
+.view-all{background: url('assets/images/view-all--btn.png') center no-repeat; height: 61px; margin-top: 70px;}
+.view-all a {color: #fff; font-family: 'Quicksand', sans-serif; text-transform: uppercase; font-weight: 700; font-size: 1em; position: relative; top: 20px; }
+#footer
+{
+    height: auto;
+    background-color: #F6A4B2;
+    position: relative;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding-bottom:20px;
+    margin-top:50px;
+}
+.footer-text{text-align: center; font-family: 'Quicksand', sans-serif;  font-weight: 700; color: #D41969; }
+
+/*======================Jon 5.06.16======================*/
+.wpp-post-title, a.wpp-post-title:hover { 
+    font-family: "Quicksand",sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color:#333;
+    text-decoration:none;
+    float:left;
+}
+.post-stats { 
+    font-family: "Quicksand",sans-serif;
+    font-size: 0.8em !important;
+    font-weight: 700 !important;
+    padding-top: 10px;
+    text-align: center;
+ }
+
+.sidpanel_src #src_input {
+    border-color: #949594 -moz-use-text-color #949594 #949594;
+    border-radius: 0;
+    border-style: solid none solid solid;
+    border-width: 1px medium 1px 1px;
+    height:40px;
+}
+.sidpanel_src  #src_input::-moz-placeholder { 
+	color:#949594;
+	font-size:14px;	
+	
+}
+
+.sidpanel_src .src-btn {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border-color: #949594 #949594 #949594 -moz-use-text-color;
+    border-radius: 0;
+    border-style: solid solid solid none;
+    border-width: 1px 1px 1px medium;
+    display: inline;
+    height: 40px;
+}
+.instagram-pics { float:left; }
+.instagram-pics > li { float:left; width:47.9%; margin:0 3px 8px; display:inline-block; }
+.instagram-pics img { 
+    display: block;
+    height: auto;
+    max-width: 100%; 
+}
+.es-carousel-wrapper { padding:0; margin:0; border:10px solid #F6A4B2;  }
+.jr-insta-thumb ul.thumbnails.jr_col_7 li { margin:0 0 0 2.5%; }
+.bx-wrapper { margin:0 5px !important; }
+.bx-default-pager { display:none; }
+.meet > h4 { margin-top:50px; }
+
+.hovereffect img{ width:100%; }
+.hovereffect .overlay { left:10% !important;}
+
+/*==============media===========
+
+@media only screen and (max-width : 1920px){
+	.overlay {
+	    width:80% !important;
+	    left:0 !important;
+	    right:0 !important;
+	    bottom:10px !important;
+	    margin:0 auto !important;					
+	}
+
+	
+}
+@media only screen and (min-width : 980px) {
+	.overlay {
+	    
+	}
+}
+@media only screen and (min-width : 900px) {
+	.overlay {
+	    
+	}
+}*/

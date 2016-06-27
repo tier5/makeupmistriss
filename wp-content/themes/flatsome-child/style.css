@@ -1,0 +1,21 @@
+/*
+Theme Name: Flatsome Child Theme
+Theme URI: http://flatsome.uxthemes.com/
+Description: This is a child theme for Flatsome
+Author: UX Themes
+Author URI: http: //www.uxthemes.com/
+Template: flatsome
+Version: 2.5
+*/
+
+/*************** ADD CUSTOM CSS HERE.   ***************/
+
+#logo{width:200px!important;}
+#logo img{max-width:400px!important;}
+#logo a img{max-height:120px!important;}
+
+@media only screen and (max-width: 48em) {
+/*************** ADD MOBILE ONLY CSS HERE  ***************/
+
+
+}

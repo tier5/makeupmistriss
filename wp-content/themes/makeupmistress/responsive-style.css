@@ -1,0 +1,66 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*@media only screen and (max-width : 1920px) and (min-width : 900px) {
+	.overlay {
+	    margin-left: 6%;
+	}
+}
+@media only screen and (min-width : 1280px) {
+	.overlay {
+	    margin-left: 6%;
+	}
+}*/
+@media only screen and (min-width: 1025px) {
+	.header{background:url('assets/images/new_background.jpg') repeat-x top; min-height: 370px; }
+	/*.overlay {
+	    margin-left: 6%;
+	}*/
+
+}
+@media only screen and (max-width: 1024px) {
+.header{background:url('assets/images/new_background.jpg') repeat-x top; min-height: 370px; }
+
+
+}
+@media only screen and (min-width : 768px) and (max-width : 1023px){
+	.header{background:url('assets/images/new_background.jpg') repeat-x top; min-height: 370px; }
+}
+
+
+/*@media only screen and (min-width : 980px) {
+	.overlay {
+	    //margin-left: 5%;
+	}
+}
+@media only screen and (min-width : 900px) {
+	.overlay {
+	    margin-left: 10%;
+	}
+}*/
+
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+	.header{background:url('assets/images/new_background.jpg') repeat-x top; min-height: 370px; }
+	#navigation .menu-main-menu-container > .nav-menu > li { display:block !important; width:100% !important; }
+	.navbar-inverse .navbar-nav > li > a, #navigation .menu-main-menu-container > .nav-menu > li > a { text-align:left; width:100%; }
+	.hovereffect img { margin:0 auto; }
+
+}
+
+
+@media only screen and (min-width : 320px) and (max-width : 479px) {
+	.header{background:url('assets/images/new_background.jpg') repeat-x top; min-height: 370px; }
+	.topleftpanel2 { text-align:left !important; }
+	.topleftpanel3 { margin-top:76% !important; }
+	.list-group a { font-size:10px; }
+	.list-group-item { padding:1px !important; }
+	#navigation .menu-main-menu-container > .nav-menu > li { display:block !important; width:100% !important; }
+	.navbar-inverse .navbar-nav > li > a, #navigation .menu-main-menu-container > .nav-menu > li > a { text-align:left; width:100%; }
+	.hovereffect img { margin:0 auto; }
+
+}
+
+@media only screen and (min-width : 240px) and (max-width : 319px){
+	.header{background:url('assets/images/new_background.jpg') repeat-x top; min-height: 370px; }
+	
+}

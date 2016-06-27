@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* CSS Document */
+@media only screen and (min-width: 1025px) {
+	.header{background:url('assets/images/top-bg.png') repeat-x top; min-height: 370px; }
+
+}
+@media only screen and (max-width: 1024px) {
+.header{background:url('assets/images/top-bg.png') repeat-x top; min-height: 370px; }
+
+}
+
+
+
+@media only screen and (min-width : 768px) and (max-width : 1023px){
+	.header{background:url('assets/images/top-bg.png') repeat-x top; min-height: 370px; }
+}
+
+
+
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+	.header{background:url('assets/images/top-bg-overlay.png') repeat-x top; min-height: 370px; }
+}
+
+
+@media only screen and (min-width : 320px) and (max-width : 479px) {
+	.header{background:url('assets/images/top-bg-overlay.png') repeat-x top; min-height: 370px; }
+
+}
+
+@media only screen and (min-width : 240px) and (max-width : 319px){
+	.header{background:url('assets/images/top-bg-overlay.png') repeat-x top; min-height: 370px; }
+	
+}
